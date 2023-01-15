@@ -32,7 +32,7 @@ const Expenses = ({ transactions }) => {
       </Card>
       <Card>
         <CardContent>
-          <Typography>Expence</Typography>
+          <Typography>Expense</Typography>
           <Typography style={{ color: "red" }}>Rs {expense}</Typography>
         </CardContent>
       </Card>

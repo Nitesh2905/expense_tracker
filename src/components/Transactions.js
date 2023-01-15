@@ -24,6 +24,8 @@ const Transactions = ({ setTransactions }) => {
     };
 
     setTransactions((prevState) => [transaction, ...prevState]);
+
+    localStorage.setItem("transaction", transaction);
   };
 
   return (
@@ -40,7 +42,7 @@ const Transactions = ({ setTransactions }) => {
         onChange={(e) => setAmount(e.target.value)}
       ></TextField>
       <Button variant="contained" onClick={() => addTransaction()}>
-        ADD Transactions
+        Add Transactions
       </Button>
     </Container>
   );

@@ -27,16 +27,14 @@ const Component = styled(Box)`
 `;
 
 function App() {
-  const [transactions, setTransactions] = useState([
-    { id: 1, text: "Chips", amount: -10 },
-    { id: 2, text: "Salary", amount: +1000 },
-    { id: 3, text: "ColdDrink", amount: -12 },
-    { id: 4, text: "Bonus", amount: 1500 },
-  ]);
+  const [transactions, setTransactions] = useState([]);
   return (
     <Box style={{ background: "#F6F6F6" }}>
       <Header>Expense Tracker</Header>
-
+      <Typography variant="h6" textAlign="center">
+        {" "}
+        Note: For Expenses amt add - sign to amount.
+      </Typography>
       <Component>
         <Box>
           <Balance transactions={transactions} />
